@@ -14,6 +14,8 @@ namespace SocialNetwork.BLL.Services
         public UserService()
         {
             userRepository = new UserRepository();
+            messageService = new MessageService();
+            friendRepository = new FriendRepository();
         }
 
         public void Register(UserRegistrationData userRegistrationData)
